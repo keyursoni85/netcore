@@ -1,0 +1,203 @@
+﻿
+@model Application.Web.Models.AthleteModel
+@{
+    ViewData["Title"] = "Athlete List";
+    ViewBag.PageTitle = "Demo Project - Athlete List";
+}
+
+<div class="main-body">
+    <div class="page-wrapper">
+        <div class="page-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5> Test Details </h5>
+                            <div class="pull-right">
+                                <input type="hidden" id="TestId" value="@Model.TestId" />
+                                <a id="createNewAthlete" class="btn btn-primary text-white">
+                                    <i class="icofont icofont-plus m-r-5"></i>  Add New Athlete To Test
+                                </a>
+                                <a id="deleteTest" data-toggle="modal" asp-action="DeleteTest" asp-route-id="@Model.TestId" data-target="#modal-action-delete-Test" class="btn btn-danger">
+                                    <i class="icofont icofont-delete m-r-5"></i>  Delete Test
+                                </a>
+                                <a id="BackTest" asp-controller="Home" asp-action="Index" class="btn btn-info">
+                                    <i class="icofont icofont-arrow-left"></i>  Back To Test
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="table-responsive">
+                                @if (Model.athleteList.Any())
+                                {
+
+                                    <table id="userlist" class="table table-hover table-border-style">
+                                        <thead>
+                                            <tr>
+                                                <th>Ranking</th>
+                                                <th>Distance(meter)</th>
+                                                <th>Fitness Rating</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.athleteList)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        <a id="EditAthlete" onclick="UpdateAthlete(@item.AthleteId)">
+                                                            @item.AthleteName
+                                                        </a>
+                                                    </td>
+                                                    <td>@item.Distance</td>
+                                                    <td>
+                                                        @{
+                                                            if (item.Distance <= 1000)
+                                                            {
+                                                                @Html.Raw("Below Average");
+                                                            }
+                                                            else if (item.Distance > 1000 && item.Distance <= 2000)
+                                                            {
+                                                                @Html.Raw("Average");
+                                                            }
+                                                            else if (item.Distance > 2000 && item.Distance <= 3500)
+                                                            {
+                                                                @Html.Raw("Good");
+                                                            }
+                                                            else
+                                                            {
+                                                                @Html.Raw("Very Good");
+                                                            }
+                                                        }
+
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                }
+                                else
+                                {
+                                    <table class="table table-hover table-border-style">
+                                        <tr>
+                                            <td>No Record Found.</td>
+                                        </tr>
+                                    </table>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-overlay"></div>
+        </div>
+    </div>
+</div>
+<div id="modal-action-Athlete" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content" id="getAthletecode">
+        </div>
+    </div>
+</div>
+
+<div id="modal-action-test" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" id="getcode">
+        </div>
+    </div>
+</div>
+
+<div id="modal-action-delete-Test" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" id="getDeletecode">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/lib/jquery/js/jquery.min.js"></script>
+<script>
+    $(function () {
+        var isError = '@ViewBag.IsError';
+        var message = '@ViewBag.Message';
+        var isForgotPwdSucc = '@ViewBag.IsForgotPwdSucc';
+
+        if (isError && isError == "1") {
+            var jacked = humane.create({ timeout: 6000, baseCls: 'humane-jackedup', addnCls: 'humane-jackedup-error' });
+            jacked.log("<i class='fa fa-times-circle'></i>&nbsp;" + message);
+        }
+
+        if (isForgotPwdSucc && isForgotPwdSucc == "1") {
+            var jacked = humane.create({ timeout: 6000, baseCls: 'humane-jackedup', addnCls: 'humane-jackedup-success' });
+            jacked.log("<i class='fa fa-smile-o'></i>&nbsp;" + message);
+        }
+    });
+</script>
+<script>
+    $("#createNewAthlete").unbind().click(function () {
+
+        $.ajax({
+            url: '@Url.Action("CreateAthlete", "Home")',
+            type: 'GET',
+            data: { testId : $("#TestId").val()},
+            dataType: '',
+            success: function (d) {
+                if (d.length > 0) {
+                    $("#getAthletecode").html(d);
+                    $("#modal-action-Athlete").modal("show");
+                    $("#modal-action-Athlete").on('shown.bs.modal', function () {
+                        //$("#Username").focus();
+                    });
+                }
+            },
+            error: function () {
+                alert('Error! Please try again.');
+            }
+        });
+    });
+
+    function UpdateAthlete(aId) {
+
+        $.ajax({
+            url: '@Url.Action("CreateAthlete","Home")',
+            type: 'GET',
+            data: { testId: $("#TestId").val(), athleteId: aId},
+            dataType: '',
+            success: function (d) {
+                if (d.length > 0) {
+                    $("#getAthletecode").html(d);
+                    $("#modal-action-Athlete").modal("show");
+                    $("#modal-action-Athlete").on('shown.bs.modal', function () {
+                        //$("#Username").focus();
+                    });
+                }
+            },
+            error: function () {
+                alert('Error! Please try again.');
+            }
+        });
+    }
+
+    $("#deleteTest").unbind().click(function () {
+        debugger
+        $.ajax({
+            url: this.href,
+            type: 'GET',
+            dataType: '',
+            success: function (d) {
+                if (d.length > 0) {
+                    $("#getDeletecode").html(d);
+                    $("#modal-action-delete-Test").modal("show");
+                    $("#modal-action-delete-Test").on('shown.bs.modal', function () {
+                        //$("#Username").focus();
+                    });
+                }
+            },
+            error: function () {
+                alert('Error! Please try again.');
+            }
+        });
+    });
+
+</script>

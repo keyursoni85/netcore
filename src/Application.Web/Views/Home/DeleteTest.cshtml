@@ -1,0 +1,24 @@
+﻿@model Application.Web.Models.AthleteModel
+@{
+    ViewBag.PageTitle = "Application - Delete Athlete";
+}
+@using (Html.BeginForm("DeleteTest", "Home", FormMethod.Post, new { @class = "form_submit", id = "DeleteTestAthlete" }))
+{
+    <div class="modal-header">
+        <h4 class="modal-title">Delete Athlete</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group row">
+            <div class="col-sm-12">
+                Are sure you want to delete.
+                <input asp-for="TestId" value="@Model.TestId" type="hidden" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary btn_f_submit" data-dismiss="modal" id="No" type="button">No</button>
+        <button class="btn btn-danger btn_f_submit" id="Yes" type="submit">Yes</button>
+    </div>
+
+}

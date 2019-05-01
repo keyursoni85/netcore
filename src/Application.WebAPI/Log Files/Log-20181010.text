@@ -1,0 +1,722 @@
+2018-10-10 18:26:40.021 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/ValidateConnection  
+2018-10-10 18:26:40.021 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/values  
+2018-10-10 18:26:41.299 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.ValuesController.Get (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:26:41.375 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:26:41.751 +05:30 [Information] Executed action "Application.WebAPI.Controllers.ValuesController.Get (Application.WebAPI)" in 460.8101ms
+2018-10-10 18:26:41.784 +05:30 [Information] Request finished in 1886.4274ms 200 application/json; charset=utf-8
+2018-10-10 18:26:41.834 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/favicon.ico  
+2018-10-10 18:26:41.908 +05:30 [Information] Request finished in 81.04ms 404 
+2018-10-10 18:26:42.401 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.ValidateConnection (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:26:43.208 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:26:43.225 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.ValidateConnection (Application.WebAPI)" in 1996.9624ms
+2018-10-10 18:26:43.234 +05:30 [Information] Request finished in 3359.133ms 200 application/json; charset=utf-8
+2018-10-10 18:26:43.313 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Providers/ListExternalProvider  
+2018-10-10 18:26:43.353 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:26:44.218 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:26:45.080 +05:30 [Information] Executed DbCommand ("327"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ProviderId], [x].[AuthorizationEndpoint], [x].[ClientId], [x].[ClientSecret], [x].[IsDelete], [x].[IsEnable], [x].[ProviderName], [x].[RedirectUrl], [x].[TokenEndpoint], [x].[UserInformationEndpoint]
+FROM [ExternalLoginProviders] AS [x]
+WHERE [x].[IsDelete] = 0"
+2018-10-10 18:26:45.257 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:26:45.345 +05:30 [Information] Executed action "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" in 1955.1009ms
+2018-10-10 18:26:45.447 +05:30 [Information] Request finished in 2040.2814ms 200 application/json; charset=utf-8
+2018-10-10 18:26:52.884 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Providers/ListExternalProvider  
+2018-10-10 18:26:52.894 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:26:52.904 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:26:52.942 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ProviderId], [x].[AuthorizationEndpoint], [x].[ClientId], [x].[ClientSecret], [x].[IsDelete], [x].[IsEnable], [x].[ProviderName], [x].[RedirectUrl], [x].[TokenEndpoint], [x].[UserInformationEndpoint]
+FROM [ExternalLoginProviders] AS [x]
+WHERE [x].[IsDelete] = 0"
+2018-10-10 18:26:52.950 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:26:52.977 +05:30 [Information] Executed action "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" in 65.8756ms
+2018-10-10 18:26:52.986 +05:30 [Information] Request finished in 115.9284ms 200 application/json; charset=utf-8
+2018-10-10 18:27:14.327 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/ValidateConnection  
+2018-10-10 18:27:14.358 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.ValidateConnection (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:14.389 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:14.403 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.ValidateConnection (Application.WebAPI)" in 62.0445ms
+2018-10-10 18:27:14.431 +05:30 [Information] Request finished in 103.154ms 200 application/json; charset=utf-8
+2018-10-10 18:27:14.489 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Settings/FindSystemSettingsBySettingName?sName=LockoutDurationSetting&pName=MaxLockoutDuration  
+2018-10-10 18:27:14.579 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" with arguments (["LockoutDurationSetting", "MaxLockoutDuration"]) - ModelState is Valid
+2018-10-10 18:27:14.611 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:14.827 +05:30 [Information] Executed DbCommand ("134"ms) [Parameters=["@__sName_0='?' (Size = 450), @__pName_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [Setting].[SettingsName], [Setting].[PropertyName], [Setting].[PropertyValue]
+FROM [SystemSettings] AS [Setting]
+WHERE ([Setting].[SettingsName] = @__sName_0) AND ([Setting].[PropertyName] = @__pName_1)"
+2018-10-10 18:27:14.910 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:14.958 +05:30 [Information] Executed action "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" in 407.4508ms
+2018-10-10 18:27:14.966 +05:30 [Information] Request finished in 515.8965ms 200 application/json; charset=utf-8
+2018-10-10 18:27:15.009 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Settings/FindSystemSettingsBySettingName?sName=LoginattemptsSetting&pName=MaxLoginattempts  
+2018-10-10 18:27:15.038 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" with arguments (["LoginattemptsSetting", "MaxLoginattempts"]) - ModelState is Valid
+2018-10-10 18:27:15.067 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:15.096 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__sName_0='?' (Size = 450), @__pName_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [Setting].[SettingsName], [Setting].[PropertyName], [Setting].[PropertyValue]
+FROM [SystemSettings] AS [Setting]
+WHERE ([Setting].[SettingsName] = @__sName_0) AND ([Setting].[PropertyName] = @__pName_1)"
+2018-10-10 18:27:15.124 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:15.134 +05:30 [Information] Executed action "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" in 114.231ms
+2018-10-10 18:27:15.162 +05:30 [Information] Request finished in 154.9271ms 200 application/json; charset=utf-8
+2018-10-10 18:27:15.209 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Providers/ListExternalProvider  
+2018-10-10 18:27:15.255 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:15.283 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:15.310 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ProviderId], [x].[AuthorizationEndpoint], [x].[ClientId], [x].[ClientSecret], [x].[IsDelete], [x].[IsEnable], [x].[ProviderName], [x].[RedirectUrl], [x].[TokenEndpoint], [x].[UserInformationEndpoint]
+FROM [ExternalLoginProviders] AS [x]
+WHERE [x].[IsDelete] = 0"
+2018-10-10 18:27:15.356 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:15.386 +05:30 [Information] Executed action "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" in 147.897ms
+2018-10-10 18:27:15.394 +05:30 [Information] Request finished in 224.282ms 200 application/json; charset=utf-8
+2018-10-10 18:27:15.424 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/IsIPAddressBanOrRestrict?identifier=serveradmin&banipTime=120  
+2018-10-10 18:27:15.472 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.IsIPAddressBanOrRestrict (Application.WebAPI)" with arguments (["serveradmin", "120"]) - ModelState is Valid
+2018-10-10 18:27:15.486 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:15.581 +05:30 [Information] Executed DbCommand ("37"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__ToSafeString_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:15.674 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__accessipSetting_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemSettings] AS [x]
+        WHERE [x].[SettingsName] = @__accessipSetting_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-10-10 18:27:15.708 +05:30 [Information] Executed DbCommand ("9"ms) [Parameters=["@__accessipSetting_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[SettingsName], [x].[PropertyName], [x].[PropertyValue]
+FROM [SystemSettings] AS [x]
+WHERE [x].[SettingsName] = @__accessipSetting_0"
+2018-10-10 18:27:15.797 +05:30 [Warning] The LINQ expression '"LastOrDefault()"' could not be translated and will be evaluated locally.
+2018-10-10 18:27:15.848 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[BanId], [x].[BanIPAddress], [x].[InsertedDate], [x].[UserId]
+FROM [BanIpAddresses] AS [x]
+INNER JOIN [Users] AS [y] ON [x].[UserId] = [y].[UserID]
+WHERE (([y].[Username] = @__identifier_0) AND ([y].[LoginStatusId] = 2)) AND ([y].[RoleID] = 1)"
+2018-10-10 18:27:15.876 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:15.884 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.IsIPAddressBanOrRestrict (Application.WebAPI)" in 450.0707ms
+2018-10-10 18:27:15.898 +05:30 [Information] Request finished in 487.5867ms 200 application/json; charset=utf-8
+2018-10-10 18:27:15.954 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/IsUserRegistered?identifier=serveradmin  
+2018-10-10 18:27:16.002 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.IsUserRegistered (Application.WebAPI)" with arguments (["serveradmin"]) - ModelState is Valid
+2018-10-10 18:27:16.048 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:16.099 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [x]
+        WHERE ([x].[Username] = @__ToSafeString_0) AND ([x].[IsDeleted] = 0))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-10-10 18:27:16.139 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE ([x].[Username] = @__identifier_0) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:16.223 +05:30 [Information] Executed DbCommand ("48"ms) [Parameters=["@__user_UserId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[DeviceId], [x].[AttestationCert], [x].[Counter], [x].[CreatedOn], [x].[IsCompromised], [x].[KeyHandle], [x].[PublicKey], [x].[UpdatedOn], [x].[UserId]
+FROM [Device] AS [x]
+WHERE [x].[UserId] = @__user_UserId_0"
+2018-10-10 18:27:16.270 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:16.299 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.IsUserRegistered (Application.WebAPI)" in 314.7449ms
+2018-10-10 18:27:16.308 +05:30 [Information] Request finished in 391.9385ms 200 application/json; charset=utf-8
+2018-10-10 18:27:16.357 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/ValidateUser?identifier=serveradmin&secret=Admin@2016&isEnableLdap=false&maxLoginAttempts=3  
+2018-10-10 18:27:16.387 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.ValidateUser (Application.WebAPI)" with arguments (["serveradmin", "Admin@2016", "false", "3"]) - ModelState is Valid
+2018-10-10 18:27:16.442 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:16.478 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__ToSafeString_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:16.533 +05:30 [Information] Executed DbCommand ("20"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__identifier_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:16.886 +05:30 [Information] Executed DbCommand ("121"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p42='?', @p6='?' (Size = 4000), @p7='?' (Size = 200), @p8='?', @p9='?', @p10='?' (Size = 50), @p11='?' (Size = 4000), @p12='?' (Size = 100), @p13='?' (Size = 50), @p14='?', @p15='?', @p16='?' (Size = 255), @p17='?', @p18='?' (Size = 30), @p19='?' (Size = 50), @p20='?', @p21='?' (Size = 100), @p22='?', @p23='?', @p24='?', @p25='?' (Size = 50), @p26='?', @p27='?', @p28='?', @p29='?' (Size = 200), @p30='?' (Size = 30), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?', @p34='?' (Size = 4000), @p35='?' (Size = 255), @p36='?' (Size = 30), @p37='?' (Size = 50), @p38='?', @p39='?' (Size = 32), @p40='?' (Size = 50), @p41='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BanIpAddresses] ([BanIPAddress], [InsertedDate], [UserId])
+VALUES (@p0, @p1, @p2);
+SELECT [BanId]
+FROM [BanIpAddresses]
+WHERE @@ROWCOUNT = 1 AND [BanId] = scope_identity();
+
+INSERT INTO [UserLoginAttempts] ([IsLogin], [LoginDate], [UserId])
+VALUES (@p3, @p4, @p5);
+SELECT [LoginId]
+FROM [UserLoginAttempts]
+WHERE @@ROWCOUNT = 1 AND [LoginId] = scope_identity();
+
+UPDATE [Users] SET [AdditionalParams] = @p6, [Address] = @p7, [AuthenticationType] = @p8, [Changed] = @p9, [City] = @p10, [Comments] = @p11, [CompanyName] = @p12, [Country] = @p13, [Created] = @p14, [EcommerceEnabled] = @p15, [Email] = @p16, [FailedLogins] = @p17, [Fax] = @p18, [FirstName] = @p19, [HtmlMail] = @p20, [InstantMessenger] = @p21, [IsDeleted] = @p22, [IsDemo] = @p23, [IsPeer] = @p24, [LastName] = @p25, [LoginStatusId] = @p26, [OneTimePasswordState] = @p27, [OwnerID] = @p28, [Password] = @p29, [PrimaryPhone] = @p30, [ProviderKey] = @p31, [ProviderName] = @p32, [RoleID] = @p33, [Salt] = @p34, [SecondaryEmail] = @p35, [SecondaryPhone] = @p36, [State] = @p37, [StatusID] = @p38, [SubscriberNumber] = @p39, [Username] = @p40, [Zip] = @p41
+WHERE [UserID] = @p42;
+SELECT @@ROWCOUNT;"
+2018-10-10 18:27:16.966 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__ToSafeString_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:16.994 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:17.006 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.ValidateUser (Application.WebAPI)" in 634.6707ms
+2018-10-10 18:27:17.035 +05:30 [Information] Request finished in 693.3152ms 200 application/json; charset=utf-8
+2018-10-10 18:27:25.826 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/ValidateConnection  
+2018-10-10 18:27:25.873 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.ValidateConnection (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:25.899 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:25.947 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.ValidateConnection (Application.WebAPI)" in 73.6136ms
+2018-10-10 18:27:25.957 +05:30 [Information] Request finished in 167.7858ms 200 application/json; charset=utf-8
+2018-10-10 18:27:26.007 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Settings/FindSystemSettingsBySettingName?sName=LockoutDurationSetting&pName=MaxLockoutDuration  
+2018-10-10 18:27:26.056 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" with arguments (["LockoutDurationSetting", "MaxLockoutDuration"]) - ModelState is Valid
+2018-10-10 18:27:26.082 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:26.112 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__sName_0='?' (Size = 450), @__pName_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [Setting].[SettingsName], [Setting].[PropertyName], [Setting].[PropertyValue]
+FROM [SystemSettings] AS [Setting]
+WHERE ([Setting].[SettingsName] = @__sName_0) AND ([Setting].[PropertyName] = @__pName_1)"
+2018-10-10 18:27:26.157 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:26.185 +05:30 [Information] Executed action "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" in 150.1225ms
+2018-10-10 18:27:26.215 +05:30 [Information] Request finished in 224.7455ms 200 application/json; charset=utf-8
+2018-10-10 18:27:26.243 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Settings/FindSystemSettingsBySettingName?sName=LoginattemptsSetting&pName=MaxLoginattempts  
+2018-10-10 18:27:26.289 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" with arguments (["LoginattemptsSetting", "MaxLoginattempts"]) - ModelState is Valid
+2018-10-10 18:27:26.316 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:26.324 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__sName_0='?' (Size = 450), @__pName_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [Setting].[SettingsName], [Setting].[PropertyName], [Setting].[PropertyValue]
+FROM [SystemSettings] AS [Setting]
+WHERE ([Setting].[SettingsName] = @__sName_0) AND ([Setting].[PropertyName] = @__pName_1)"
+2018-10-10 18:27:26.370 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:26.398 +05:30 [Information] Executed action "Application.WebAPI.Controllers.SettingsController.FindSystemSettingsBySettingName (Application.WebAPI)" in 126.279ms
+2018-10-10 18:27:26.467 +05:30 [Information] Request finished in 183.749ms 200 application/json; charset=utf-8
+2018-10-10 18:27:26.490 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Providers/ListExternalProvider  
+2018-10-10 18:27:26.518 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:26.546 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:26.615 +05:30 [Information] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ProviderId], [x].[AuthorizationEndpoint], [x].[ClientId], [x].[ClientSecret], [x].[IsDelete], [x].[IsEnable], [x].[ProviderName], [x].[RedirectUrl], [x].[TokenEndpoint], [x].[UserInformationEndpoint]
+FROM [ExternalLoginProviders] AS [x]
+WHERE [x].[IsDelete] = 0"
+2018-10-10 18:27:26.644 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:26.677 +05:30 [Information] Executed action "Application.WebAPI.Controllers.ProvidersController.ListExternalProvider (Application.WebAPI)" in 152.5446ms
+2018-10-10 18:27:26.707 +05:30 [Information] Request finished in 257.0661ms 200 application/json; charset=utf-8
+2018-10-10 18:27:26.741 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/IsIPAddressBanOrRestrict?identifier=serveradmin&banipTime=120  
+2018-10-10 18:27:26.788 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.IsIPAddressBanOrRestrict (Application.WebAPI)" with arguments (["serveradmin", "120"]) - ModelState is Valid
+2018-10-10 18:27:26.836 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:26.885 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__ToSafeString_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:26.897 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__accessipSetting_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemSettings] AS [x]
+        WHERE [x].[SettingsName] = @__accessipSetting_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-10-10 18:27:26.907 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__accessipSetting_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[SettingsName], [x].[PropertyName], [x].[PropertyValue]
+FROM [SystemSettings] AS [x]
+WHERE [x].[SettingsName] = @__accessipSetting_0"
+2018-10-10 18:27:26.939 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[BanId], [x].[BanIPAddress], [x].[InsertedDate], [x].[UserId]
+FROM [BanIpAddresses] AS [x]
+INNER JOIN [Users] AS [y] ON [x].[UserId] = [y].[UserID]
+WHERE (([y].[Username] = @__identifier_0) AND ([y].[LoginStatusId] = 2)) AND ([y].[RoleID] = 1)"
+2018-10-10 18:27:26.985 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:27.014 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.IsIPAddressBanOrRestrict (Application.WebAPI)" in 243.7838ms
+2018-10-10 18:27:27.040 +05:30 [Information] Request finished in 307.2882ms 200 application/json; charset=utf-8
+2018-10-10 18:27:27.087 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/IsUserRegistered?identifier=serveradmin  
+2018-10-10 18:27:27.134 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.IsUserRegistered (Application.WebAPI)" with arguments (["serveradmin"]) - ModelState is Valid
+2018-10-10 18:27:27.179 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:27.190 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [x]
+        WHERE ([x].[Username] = @__ToSafeString_0) AND ([x].[IsDeleted] = 0))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-10-10 18:27:27.238 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE ([x].[Username] = @__identifier_0) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:27.285 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__user_UserId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[DeviceId], [x].[AttestationCert], [x].[Counter], [x].[CreatedOn], [x].[IsCompromised], [x].[KeyHandle], [x].[PublicKey], [x].[UpdatedOn], [x].[UserId]
+FROM [Device] AS [x]
+WHERE [x].[UserId] = @__user_UserId_0"
+2018-10-10 18:27:27.311 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:27.319 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.IsUserRegistered (Application.WebAPI)" in 223.5492ms
+2018-10-10 18:27:27.348 +05:30 [Information] Request finished in 279.2459ms 200 application/json; charset=utf-8
+2018-10-10 18:27:27.396 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/ValidateUser?identifier=serveradmin&secret=Admin@123&isEnableLdap=false&maxLoginAttempts=3  
+2018-10-10 18:27:27.425 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.ValidateUser (Application.WebAPI)" with arguments (["serveradmin", "Admin@123", "false", "3"]) - ModelState is Valid
+2018-10-10 18:27:27.473 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:27.483 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__ToSafeString_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:27.515 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__identifier_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:27.549 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__ToSafeInt_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[BanId], [x].[BanIPAddress], [x].[InsertedDate], [x].[UserId]
+FROM [BanIpAddresses] AS [x]
+WHERE [x].[UserId] = @__ToSafeInt_0"
+2018-10-10 18:27:27.575 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p40='?', @p4='?' (Size = 4000), @p5='?' (Size = 200), @p6='?', @p7='?', @p8='?' (Size = 50), @p9='?' (Size = 4000), @p10='?' (Size = 100), @p11='?' (Size = 50), @p12='?', @p13='?', @p14='?' (Size = 255), @p15='?', @p16='?' (Size = 30), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 100), @p20='?', @p21='?', @p22='?', @p23='?' (Size = 50), @p24='?', @p25='?', @p26='?', @p27='?' (Size = 200), @p28='?' (Size = 30), @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?', @p32='?' (Size = 4000), @p33='?' (Size = 255), @p34='?' (Size = 30), @p35='?' (Size = 50), @p36='?', @p37='?' (Size = 32), @p38='?' (Size = 50), @p39='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [BanIpAddresses]
+WHERE [BanId] = @p0;
+SELECT @@ROWCOUNT;
+
+INSERT INTO [UserLoginAttempts] ([IsLogin], [LoginDate], [UserId])
+VALUES (@p1, @p2, @p3);
+SELECT [LoginId]
+FROM [UserLoginAttempts]
+WHERE @@ROWCOUNT = 1 AND [LoginId] = scope_identity();
+
+UPDATE [Users] SET [AdditionalParams] = @p4, [Address] = @p5, [AuthenticationType] = @p6, [Changed] = @p7, [City] = @p8, [Comments] = @p9, [CompanyName] = @p10, [Country] = @p11, [Created] = @p12, [EcommerceEnabled] = @p13, [Email] = @p14, [FailedLogins] = @p15, [Fax] = @p16, [FirstName] = @p17, [HtmlMail] = @p18, [InstantMessenger] = @p19, [IsDeleted] = @p20, [IsDemo] = @p21, [IsPeer] = @p22, [LastName] = @p23, [LoginStatusId] = @p24, [OneTimePasswordState] = @p25, [OwnerID] = @p26, [Password] = @p27, [PrimaryPhone] = @p28, [ProviderKey] = @p29, [ProviderName] = @p30, [RoleID] = @p31, [Salt] = @p32, [SecondaryEmail] = @p33, [SecondaryPhone] = @p34, [State] = @p35, [StatusID] = @p36, [SubscriberNumber] = @p37, [Username] = @p38, [Zip] = @p39
+WHERE [UserID] = @p40;
+SELECT @@ROWCOUNT;"
+2018-10-10 18:27:27.609 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__ToSafeString_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:27.635 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:27.664 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.ValidateUser (Application.WebAPI)" in 238.3361ms
+2018-10-10 18:27:27.673 +05:30 [Information] Request finished in 316.467ms 200 application/json; charset=utf-8
+2018-10-10 18:27:27.704 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/GetActiveUserByUserName?identifier=serveradmin  
+2018-10-10 18:27:27.735 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.GetActiveUserByUserName (Application.WebAPI)" with arguments (["serveradmin"]) - ModelState is Valid
+2018-10-10 18:27:27.762 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:27.804 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__ToSafeString_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE (([x].[Username] = @__ToSafeString_0) AND ([x].[StatusID] = 1)) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:27.815 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:27.882 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.GetActiveUserByUserName (Application.WebAPI)" in 145.1827ms
+2018-10-10 18:27:27.893 +05:30 [Information] Request finished in 205.2168ms 200 application/json; charset=utf-8
+2018-10-10 18:27:29.806 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/FindUserIdByUserName?identifier=serveradmin  
+2018-10-10 18:27:29.833 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.FindUserIdByUserName (Application.WebAPI)" with arguments (["serveradmin"]) - ModelState is Valid
+2018-10-10 18:27:29.862 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:29.892 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE ([x].[Username] = @__identifier_0) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:29.905 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:29.917 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.FindUserIdByUserName (Application.WebAPI)" in 96.9414ms
+2018-10-10 18:27:29.948 +05:30 [Information] Request finished in 158.8852ms 200 application/json; charset=utf-8
+2018-10-10 18:27:29.997 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetModule  
+2018-10-10 18:27:30.045 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:30.074 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:30.183 +05:30 [Information] Executed DbCommand ("56"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ModuleId], [x].[Changed], [x].[Created], [x].[IsActive], [x].[ModuleIcon], [x].[Name]
+FROM [Module] AS [x]
+WHERE [x].[IsActive] = 1"
+2018-10-10 18:27:30.232 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:30.282 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" in 236.8093ms
+2018-10-10 18:27:30.347 +05:30 [Information] Request finished in 334.8689ms 200 application/json; charset=utf-8
+2018-10-10 18:27:30.376 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetModule  
+2018-10-10 18:27:30.384 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:30.411 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:30.439 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ModuleId], [x].[Changed], [x].[Created], [x].[IsActive], [x].[ModuleIcon], [x].[Name]
+FROM [Module] AS [x]
+WHERE [x].[IsActive] = 1"
+2018-10-10 18:27:30.486 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:30.497 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" in 108.843ms
+2018-10-10 18:27:30.510 +05:30 [Information] Request finished in 193.3333ms 200 application/json; charset=utf-8
+2018-10-10 18:27:30.541 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:30.570 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:30.608 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:31.291 +05:30 [Information] Executed DbCommand ("561"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:31.307 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:31.361 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 767.9512ms
+2018-10-10 18:27:31.373 +05:30 [Information] Request finished in 848.1796ms 200 application/json; charset=utf-8
+2018-10-10 18:27:31.429 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:31.441 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:31.490 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:31.539 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:31.547 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:31.556 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 117.7262ms
+2018-10-10 18:27:31.566 +05:30 [Information] Request finished in 175.5215ms 200 application/json; charset=utf-8
+2018-10-10 18:27:31.597 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:31.626 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:31.635 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:31.664 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:31.692 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:31.720 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 94.6371ms
+2018-10-10 18:27:31.730 +05:30 [Information] Request finished in 151.4213ms 200 application/json; charset=utf-8
+2018-10-10 18:27:31.803 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:31.831 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:31.860 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:31.910 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:31.957 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:31.985 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 154.0864ms
+2018-10-10 18:27:32.000 +05:30 [Information] Request finished in 209.1422ms 200 application/json; charset=utf-8
+2018-10-10 18:27:32.014 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:32.024 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:32.032 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:32.064 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:32.091 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:32.099 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 77.1273ms
+2018-10-10 18:27:32.108 +05:30 [Information] Request finished in 96.7062ms 200 application/json; charset=utf-8
+2018-10-10 18:27:32.140 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:32.150 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:32.158 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:32.186 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:32.195 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:32.225 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 55.1178ms
+2018-10-10 18:27:32.254 +05:30 [Information] Request finished in 112.1099ms 200 application/json; charset=utf-8
+2018-10-10 18:27:46.191 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/ListActivePermissions?currentPage=1&pageSize=10  
+2018-10-10 18:27:46.239 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.ListActivePermissions (Application.WebAPI)" with arguments (["1", "10"]) - ModelState is Valid
+2018-10-10 18:27:46.288 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:46.353 +05:30 [Warning] Query: '"(from Permissions x in DbSet<Permissions> where [x].IsDeleted == False select [x]).Skip(__p_0).Take(..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2018-10-10 18:27:46.489 +05:30 [Information] Executed DbCommand ("83"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[PermissionsId], [x].[Changed], [x].[Created], [x].[IsDeleted], [x].[PermissionName]
+FROM [Permissions] AS [x]
+WHERE [x].[IsDeleted] = 0
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2018-10-10 18:27:46.542 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:46.572 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.ListActivePermissions (Application.WebAPI)" in 350.9918ms
+2018-10-10 18:27:46.599 +05:30 [Information] Request finished in 427.0089ms 200 application/json; charset=utf-8
+2018-10-10 18:27:46.647 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/ListPermissions  
+2018-10-10 18:27:46.694 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.ListPermissions (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:46.740 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:46.804 +05:30 [Information] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[PermissionsId], [x].[Changed], [x].[Created], [x].[IsDeleted], [x].[PermissionName]
+FROM [Permissions] AS [x]
+WHERE [x].[IsDeleted] = 0"
+2018-10-10 18:27:46.849 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:46.895 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.ListPermissions (Application.WebAPI)" in 200.2426ms
+2018-10-10 18:27:46.909 +05:30 [Information] Request finished in 295.6849ms 200 application/json; charset=utf-8
+2018-10-10 18:27:47.596 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetPermissionbyUserName?uName=serveradmin&pName=Create&menuName=AddPermissions  
+2018-10-10 18:27:47.644 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" with arguments (["serveradmin", "Create", "AddPermissions"]) - ModelState is Valid
+2018-10-10 18:27:47.678 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:47.773 +05:30 [Information] Executed DbCommand ("36"ms) [Parameters=["@__uName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [user].[RoleID], [groups].[GroupName], [groups].[GroupId]
+FROM [Users] AS [user]
+INNER JOIN [UserGroups] AS [groups] ON [user].[RoleID] = [groups].[GroupId]
+WHERE ([user].[Username] = @__uName_0) AND ([user].[IsDeleted] = 0)"
+2018-10-10 18:27:47.782 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:47.828 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" in 183.55ms
+2018-10-10 18:27:47.840 +05:30 [Information] Request finished in 280.1388ms 200 application/json; charset=utf-8
+2018-10-10 18:27:48.093 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetPermissionbyUserName?uName=serveradmin&pName=Edit&menuName=AddPermissions  
+2018-10-10 18:27:48.139 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" with arguments (["serveradmin", "Edit", "AddPermissions"]) - ModelState is Valid
+2018-10-10 18:27:48.166 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:48.177 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__uName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [user].[RoleID], [groups].[GroupName], [groups].[GroupId]
+FROM [Users] AS [user]
+INNER JOIN [UserGroups] AS [groups] ON [user].[RoleID] = [groups].[GroupId]
+WHERE ([user].[Username] = @__uName_0) AND ([user].[IsDeleted] = 0)"
+2018-10-10 18:27:48.224 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:48.233 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" in 131.3417ms
+2018-10-10 18:27:48.262 +05:30 [Information] Request finished in 186.5797ms 200 application/json; charset=utf-8
+2018-10-10 18:27:48.356 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetPermissionbyUserName?uName=serveradmin&pName=Remove&menuName=AddPermissions  
+2018-10-10 18:27:48.403 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" with arguments (["serveradmin", "Remove", "AddPermissions"]) - ModelState is Valid
+2018-10-10 18:27:48.430 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:48.458 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__uName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [user].[RoleID], [groups].[GroupName], [groups].[GroupId]
+FROM [Users] AS [user]
+INNER JOIN [UserGroups] AS [groups] ON [user].[RoleID] = [groups].[GroupId]
+WHERE ([user].[Username] = @__uName_0) AND ([user].[IsDeleted] = 0)"
+2018-10-10 18:27:48.485 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:48.512 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" in 129.4992ms
+2018-10-10 18:27:48.539 +05:30 [Information] Request finished in 202.8012ms 200 application/json; charset=utf-8
+2018-10-10 18:27:49.194 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/FindUserIdByUserName?identifier=serveradmin  
+2018-10-10 18:27:49.241 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.FindUserIdByUserName (Application.WebAPI)" with arguments (["serveradmin"]) - ModelState is Valid
+2018-10-10 18:27:49.269 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:49.316 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE ([x].[Username] = @__identifier_0) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:27:49.361 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:49.372 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.FindUserIdByUserName (Application.WebAPI)" in 166.4772ms
+2018-10-10 18:27:49.400 +05:30 [Information] Request finished in 223.302ms 200 application/json; charset=utf-8
+2018-10-10 18:27:49.465 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetModule  
+2018-10-10 18:27:49.493 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:49.501 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:49.547 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ModuleId], [x].[Changed], [x].[Created], [x].[IsActive], [x].[ModuleIcon], [x].[Name]
+FROM [Module] AS [x]
+WHERE [x].[IsActive] = 1"
+2018-10-10 18:27:49.593 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:49.639 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" in 126.0967ms
+2018-10-10 18:27:49.647 +05:30 [Information] Request finished in 238.73ms 200 application/json; charset=utf-8
+2018-10-10 18:27:49.678 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetModule  
+2018-10-10 18:27:49.689 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:27:49.736 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:49.763 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ModuleId], [x].[Changed], [x].[Created], [x].[IsActive], [x].[ModuleIcon], [x].[Name]
+FROM [Module] AS [x]
+WHERE [x].[IsActive] = 1"
+2018-10-10 18:27:49.790 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:49.818 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" in 112.3041ms
+2018-10-10 18:27:49.888 +05:30 [Information] Request finished in 168.2961ms 200 application/json; charset=utf-8
+2018-10-10 18:27:49.911 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:49.960 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:50.008 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:50.055 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:50.064 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:50.074 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 151.4264ms
+2018-10-10 18:27:50.085 +05:30 [Information] Request finished in 234.1995ms 200 application/json; charset=utf-8
+2018-10-10 18:27:50.103 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:50.132 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:50.179 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:50.208 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:50.218 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:50.250 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 115.114ms
+2018-10-10 18:27:50.258 +05:30 [Information] Request finished in 161.5255ms 200 application/json; charset=utf-8
+2018-10-10 18:27:50.307 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:50.355 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:50.382 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:50.429 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:50.474 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:50.500 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 166.6752ms
+2018-10-10 18:27:50.551 +05:30 [Information] Request finished in 239.3355ms 200 application/json; charset=utf-8
+2018-10-10 18:27:50.577 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:50.622 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:50.649 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:50.675 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:50.721 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:50.729 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 144.4103ms
+2018-10-10 18:27:50.741 +05:30 [Information] Request finished in 207.8147ms 200 application/json; charset=utf-8
+2018-10-10 18:27:50.789 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:50.797 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:50.843 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:50.888 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:50.915 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:50.961 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 125.339ms
+2018-10-10 18:27:50.970 +05:30 [Information] Request finished in 216.9362ms 200 application/json; charset=utf-8
+2018-10-10 18:27:51.021 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:27:51.067 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:27:51.112 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:27:51.139 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:27:51.165 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:27:51.179 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 144.0174ms
+2018-10-10 18:27:51.225 +05:30 [Information] Request finished in 204.8181ms 200 application/json; charset=utf-8
+2018-10-10 18:28:00.497 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/ListUserGroups?identifier=&currentPage=1&pageSize=10  
+2018-10-10 18:28:00.512 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.ListUserGroups (Application.WebAPI)" with arguments (["", "1", "10"]) - ModelState is Valid
+2018-10-10 18:28:00.525 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:00.590 +05:30 [Information] Executed DbCommand ("9"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[GroupId], [x].[Changed], [x].[Created], [x].[GroupName], [x].[IsDeleted]
+FROM [UserGroups] AS [x]
+WHERE [x].[IsDeleted] = 0
+ORDER BY [x].[GroupId] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2018-10-10 18:28:00.623 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:00.655 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.ListUserGroups (Application.WebAPI)" in 127.0463ms
+2018-10-10 18:28:00.666 +05:30 [Information] Request finished in 173.7145ms 200 application/json; charset=utf-8
+2018-10-10 18:28:00.698 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/GetUserGroup  
+2018-10-10 18:28:00.726 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.GetUserGroup (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:28:00.757 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:00.782 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[GroupId], [x].[Changed], [x].[Created], [x].[GroupName], [x].[IsDeleted]
+FROM [UserGroups] AS [x]
+WHERE ([x].[IsDeleted] = 0) AND ([x].[GroupName] <> N'Administrators')"
+2018-10-10 18:28:00.814 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:00.826 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.GetUserGroup (Application.WebAPI)" in 114.2866ms
+2018-10-10 18:28:00.843 +05:30 [Information] Request finished in 139.9197ms 200 application/json; charset=utf-8
+2018-10-10 18:28:01.349 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetPermissionbyUserName?uName=serveradmin&pName=Edit&menuName=GroupPermissions  
+2018-10-10 18:28:01.375 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" with arguments (["serveradmin", "Edit", "GroupPermissions"]) - ModelState is Valid
+2018-10-10 18:28:01.403 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:01.417 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@__uName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [user].[RoleID], [groups].[GroupName], [groups].[GroupId]
+FROM [Users] AS [user]
+INNER JOIN [UserGroups] AS [groups] ON [user].[RoleID] = [groups].[GroupId]
+WHERE ([user].[Username] = @__uName_0) AND ([user].[IsDeleted] = 0)"
+2018-10-10 18:28:01.427 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:01.472 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" in 77.6523ms
+2018-10-10 18:28:01.483 +05:30 [Information] Request finished in 149.0408ms 200 application/json; charset=utf-8
+2018-10-10 18:28:01.596 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetPermissionbyUserName?uName=serveradmin&pName=Edit&menuName=GroupPermissions  
+2018-10-10 18:28:01.623 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" with arguments (["serveradmin", "Edit", "GroupPermissions"]) - ModelState is Valid
+2018-10-10 18:28:01.652 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:01.700 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__uName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [user].[RoleID], [groups].[GroupName], [groups].[GroupId]
+FROM [Users] AS [user]
+INNER JOIN [UserGroups] AS [groups] ON [user].[RoleID] = [groups].[GroupId]
+WHERE ([user].[Username] = @__uName_0) AND ([user].[IsDeleted] = 0)"
+2018-10-10 18:28:01.746 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:01.791 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" in 150.1778ms
+2018-10-10 18:28:01.860 +05:30 [Information] Request finished in 241.4002ms 200 application/json; charset=utf-8
+2018-10-10 18:28:01.883 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetPermissionbyUserName?uName=serveradmin&pName=Edit&menuName=GroupPermissions  
+2018-10-10 18:28:01.930 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" with arguments (["serveradmin", "Edit", "GroupPermissions"]) - ModelState is Valid
+2018-10-10 18:28:01.976 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:02.003 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__uName_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [user].[RoleID], [groups].[GroupName], [groups].[GroupId]
+FROM [Users] AS [user]
+INNER JOIN [UserGroups] AS [groups] ON [user].[RoleID] = [groups].[GroupId]
+WHERE ([user].[Username] = @__uName_0) AND ([user].[IsDeleted] = 0)"
+2018-10-10 18:28:02.010 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:02.038 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetPermissionbyUserName (Application.WebAPI)" in 124.7164ms
+2018-10-10 18:28:02.055 +05:30 [Information] Request finished in 225.0394ms 200 application/json; charset=utf-8
+2018-10-10 18:28:02.295 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/FindUserIdByUserName?identifier=serveradmin  
+2018-10-10 18:28:02.340 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.FindUserIdByUserName (Application.WebAPI)" with arguments (["serveradmin"]) - ModelState is Valid
+2018-10-10 18:28:02.366 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:02.413 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__identifier_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[UserID], [x].[AdditionalParams], [x].[Address], [x].[AuthenticationType], [x].[Changed], [x].[City], [x].[Comments], [x].[CompanyName], [x].[Country], [x].[Created], [x].[EcommerceEnabled], [x].[Email], [x].[FailedLogins], [x].[Fax], [x].[FirstName], [x].[HtmlMail], [x].[InstantMessenger], [x].[IsDeleted], [x].[IsDemo], [x].[IsPeer], [x].[LastName], [x].[LoginStatusId], [x].[OneTimePasswordState], [x].[OwnerID], [x].[Password], [x].[PrimaryPhone], [x].[ProviderKey], [x].[ProviderName], [x].[RoleID], [x].[Salt], [x].[SecondaryEmail], [x].[SecondaryPhone], [x].[State], [x].[StatusID], [x].[SubscriberNumber], [x].[Username], [x].[Zip]
+FROM [Users] AS [x]
+WHERE ([x].[Username] = @__identifier_0) AND ([x].[IsDeleted] = 0)"
+2018-10-10 18:28:02.459 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:02.468 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.FindUserIdByUserName (Application.WebAPI)" in 163.9305ms
+2018-10-10 18:28:02.476 +05:30 [Information] Request finished in 218.4199ms 200 application/json; charset=utf-8
+2018-10-10 18:28:02.524 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetModule  
+2018-10-10 18:28:02.552 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:28:02.561 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:02.596 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ModuleId], [x].[Changed], [x].[Created], [x].[IsActive], [x].[ModuleIcon], [x].[Name]
+FROM [Module] AS [x]
+WHERE [x].[IsActive] = 1"
+2018-10-10 18:28:02.643 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:02.654 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" in 118.9134ms
+2018-10-10 18:28:02.666 +05:30 [Information] Request finished in 176.098ms 200 application/json; charset=utf-8
+2018-10-10 18:28:02.715 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetModule  
+2018-10-10 18:28:02.762 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:28:02.789 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:02.835 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[ModuleId], [x].[Changed], [x].[Created], [x].[IsActive], [x].[ModuleIcon], [x].[Name]
+FROM [Module] AS [x]
+WHERE [x].[IsActive] = 1"
+2018-10-10 18:28:02.862 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:02.890 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetModule (Application.WebAPI)" in 146.1231ms
+2018-10-10 18:28:02.925 +05:30 [Information] Request finished in 221.5257ms 200 application/json; charset=utf-8
+2018-10-10 18:28:02.953 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:28:03.000 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:28:03.047 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:03.075 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:28:03.104 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:03.112 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 149.843ms
+2018-10-10 18:28:03.125 +05:30 [Information] Request finished in 187.2122ms 200 application/json; charset=utf-8
+2018-10-10 18:28:03.173 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:28:03.200 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:28:03.226 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:03.272 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:28:03.318 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:03.348 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 145.4514ms
+2018-10-10 18:28:03.355 +05:30 [Information] Request finished in 222.7969ms 200 application/json; charset=utf-8
+2018-10-10 18:28:03.405 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:28:03.451 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:28:03.477 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:03.504 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:28:03.549 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:03.561 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 144.4502ms
+2018-10-10 18:28:03.569 +05:30 [Information] Request finished in 201.7929ms 200 application/json; charset=utf-8
+2018-10-10 18:28:03.601 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:28:03.627 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:28:03.655 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:03.700 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:28:03.727 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:03.754 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 126.1087ms
+2018-10-10 18:28:03.763 +05:30 [Information] Request finished in 180.807ms 200 application/json; charset=utf-8
+2018-10-10 18:28:03.814 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:28:03.860 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:28:03.905 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:03.952 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:28:03.997 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:04.043 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 183.1397ms
+2018-10-10 18:28:04.129 +05:30 [Information] Request finished in 276.1923ms 200 application/json; charset=utf-8
+2018-10-10 18:28:04.151 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/GetMenuMasterByGroupId?gId=1  
+2018-10-10 18:28:04.199 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" with arguments (["1"]) - ModelState is Valid
+2018-10-10 18:28:04.227 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:04.255 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT DISTINCT [menus].[MenuId], [menus].[MenuName], [modules].[ModuleId], [modules].[Name] AS [ModuleName], [menus].[ActionName] AS [Action], [menus].[ControllerName] AS [Controller]
+FROM [Menu] AS [menus]
+INNER JOIN [Module] AS [modules] ON [menus].[ModuleId] = [modules].[ModuleId]
+WHERE [menus].[IsActive] = 1"
+2018-10-10 18:28:04.302 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:04.347 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.GetMenuMasterByGroupId (Application.WebAPI)" in 149.5464ms
+2018-10-10 18:28:04.357 +05:30 [Information] Request finished in 282.8579ms 200 application/json; charset=utf-8
+2018-10-10 18:28:06.228 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/User/GetGroupByGroupId?gId=3  
+2018-10-10 18:28:06.282 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.UserController.GetGroupByGroupId (Application.WebAPI)" with arguments (["3"]) - ModelState is Valid
+2018-10-10 18:28:06.334 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:06.380 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[GroupId], [e].[Changed], [e].[Created], [e].[GroupName], [e].[IsDeleted]
+FROM [UserGroups] AS [e]
+WHERE [e].[GroupId] = @__get_Item_0"
+2018-10-10 18:28:06.430 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:06.438 +05:30 [Information] Executed action "Application.WebAPI.Controllers.UserController.GetGroupByGroupId (Application.WebAPI)" in 197.7618ms
+2018-10-10 18:28:06.447 +05:30 [Information] Request finished in 218.4589ms 200 application/json; charset=utf-8
+2018-10-10 18:28:06.477 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/ListPermissions  
+2018-10-10 18:28:06.527 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.ListPermissions (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:28:06.558 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:06.605 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[PermissionsId], [x].[Changed], [x].[Created], [x].[IsDeleted], [x].[PermissionName]
+FROM [Permissions] AS [x]
+WHERE [x].[IsDeleted] = 0"
+2018-10-10 18:28:06.651 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:06.696 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.ListPermissions (Application.WebAPI)" in 173.607ms
+2018-10-10 18:28:06.703 +05:30 [Information] Request finished in 245.8737ms 200 application/json; charset=utf-8
+2018-10-10 18:28:06.735 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/ListActiveMenus  
+2018-10-10 18:28:06.770 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.ListActiveMenus (Application.WebAPI)" with arguments (null) - ModelState is Valid
+2018-10-10 18:28:06.817 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:06.906 +05:30 [Information] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[MenuId], [x].[ActionName], [x].[Changed], [x].[ControllerName], [x].[Created], [x].[IsActive], [x].[IsModule], [x].[MenuName], [x].[MenuOrder], [x].[ModuleId], [x].[Name]
+FROM [Menu] AS [x]
+WHERE ([x].[IsActive] = 1) AND ([x].[IsModule] = 1)"
+2018-10-10 18:28:06.936 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:06.950 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.ListActiveMenus (Application.WebAPI)" in 205.1899ms
+2018-10-10 18:28:06.960 +05:30 [Information] Request finished in 243.1202ms 200 application/json; charset=utf-8
+2018-10-10 18:28:07.021 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44344/api/Authorization/ListPermissionByGroupId?gId=3  
+2018-10-10 18:28:07.070 +05:30 [Information] Executing action method "Application.WebAPI.Controllers.AuthorizationController.ListPermissionByGroupId (Application.WebAPI)" with arguments (["3"]) - ModelState is Valid
+2018-10-10 18:28:07.118 +05:30 [Information] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationCPDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-10-10 18:28:07.172 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__ToSafeInt_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[GroupPermissionId], [x].[Changed], [x].[Created], [x].[GroupId], [x].[MenusId], [x].[PermissionId]
+FROM [GroupWisePermissions] AS [x]
+WHERE [x].[GroupId] = @__ToSafeInt_0"
+2018-10-10 18:28:07.219 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-10-10 18:28:07.267 +05:30 [Information] Executed action "Application.WebAPI.Controllers.AuthorizationController.ListPermissionByGroupId (Application.WebAPI)" in 195.7858ms
+2018-10-10 18:28:07.276 +05:30 [Information] Request finished in 291.7042ms 200 application/json; charset=utf-8

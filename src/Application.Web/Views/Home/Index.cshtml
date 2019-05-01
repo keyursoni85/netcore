@@ -1,0 +1,117 @@
+﻿@using Application.Entities
+@model IEnumerable<Test>
+@{
+    ViewData["Title"] = "Test List";
+    ViewBag.PageTitle = "Demo Project";
+}
+
+<div class="main-body">
+    <div class="page-wrapper">
+        <div class="page-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5> Test List</h5>
+
+                            <a id="createNewTest" data-toggle="modal" asp-action="CreateTest" data-target="#modal-action-test" class="pull-right btn btn-primary">
+                                <i class="icofont icofont-plus m-r-5"></i>  Create New Test
+                            </a>
+                        </div>
+                        <div class="card-block">
+                            <div class="table-responsive">
+                                @if (Model.Any())
+                                {
+                                    <table id="userlist" class="table table-hover table-border-style">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>No of Participant</th>
+                                                <th>Test Type</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>@item.TestDate.ToString("yyyy/MM/dd")</td>
+                                                    <td>@(item.TotalParticipats.HasValue ? item.TotalParticipats.Value : 0)</td>
+                                                    <td>
+                                                        <a id="ListOfAthlete" asp-action="AthleteList" asp-route-id="@item.TestId">
+                                                            @item.TestName
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                }
+                                else
+                                {
+                                    <table class="table table-hover table-border-style">
+                                        <tr>
+                                            <td>No Record Found.</td>
+                                        </tr>
+                                    </table>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-overlay"></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-action-test" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" id="getcode">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/lib/jquery/js/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js" type="text/javascript"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    function Cofirmation(isError, message, isForgotPwdSucc) {
+
+        if (isError && isError == "1") {
+            var jacked = humane.create({ timeout: 6000, baseCls: 'humane-jackedup', addnCls: 'humane-jackedup-error' });
+            jacked.log("<i class='fa fa-times-circle'></i>&nbsp;" + message);
+        }
+
+        if (isForgotPwdSucc && isForgotPwdSucc == "1") {
+            var jacked = humane.create({ timeout: 6000, baseCls: 'humane-jackedup', addnCls: 'humane-jackedup-success' });
+            jacked.log("<i class='fa fa-smile-o'></i>&nbsp;" + message);
+        }
+    }
+
+    $(function () {
+        var isError = '@ViewBag.IsError';
+        var message = '@ViewBag.Message';
+        var isForgotPwdSucc = '@ViewBag.IsForgotPwdSucc';
+        Cofirmation(isError, message, isForgotPwdSucc);
+    });
+
+    $("#createNewTest").unbind().click(function () {
+
+        $.ajax({
+            url: this.href,
+            type: 'GET',
+            dataType: '',
+            success: function (d) {
+                if (d.length > 0) {
+                    $("#getcode").html(d);
+                    $("#modal-action-test").modal("show");
+                }
+            },
+            error: function () {
+                alert('Error! Please try again.');
+            }
+        });
+    });
+</script>

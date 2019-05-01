@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@(ViewBag.PageTitle != null ? ViewBag.PageTitle : string.Empty)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="~/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- waves.css -->
+    <link rel="stylesheet" href="~/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- feather icon -->
+    <link rel="stylesheet" type="text/css" href="~/icon/feather/css/feather.css">
+    <link href="~/icon/ion-icon/css/ionicons.min.css" rel="stylesheet" />
+    <!-- jquery file upload Frame work -->
+    <link href="~/css/jquery.filer.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/jquery.filer-dragdropbox-theme.css" rel="stylesheet" type="text/css" />
+    <!-- themify-icons line icon -->
+    <link href="~/css/themify-icons.css" rel="stylesheet" type="text/css" />
+    <!-- ico font -->
+    <link href="~/css/icofont.css" rel="stylesheet" type="text/css" />
+    <link href="~/icon/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/pages/nestable/nestable.css" rel="stylesheet" />
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/pages.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/widget.css" />
+
+    <!-- Plugin Css Put Here -->
+    <link type="text/css" href="~/css/bigbox.css" rel="stylesheet" />
+    <link type="text/css" href="~/css/libnotify.css" rel="stylesheet" />
+    <link type="text/css" href="~/css/jackedup.css" rel="stylesheet" />
+    <!-- Plugin Css End Here-->
+    <!-- custom.css -->
+    <link href="~/css/custom/custom.css" rel="stylesheet" />
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+        <script src="@Url.Content("~/js/u2f/u2f-api-1.1.js")"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <script src="@Url.Content("~/js/u2f/u2f-api.min.js")"></script>
+    </environment>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Demo Project</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - Demo Project
+        </div>
+    </footer>
+    <script type="text/javascript" src="~/lib/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/lib/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- waves js -->
+    <script type="text/javascript" src="~/lib/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <script src="~/pages/waves/js/waves.min.js"></script>
+    <script type="text/javascript" src="~/pages/accordion/accordion.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="~/pages/filer/custom-filer.js"></script>
+    <script type="text/javascript" src="~/js/jquery.filer.min.js"></script>
+    <script type="text/javascript" src="~/pages/filer/jquery.fileuploads.init.js"></script>
+    <!-- Float Chart js -->
+    <script src="~/pages/chart/float/jquery.flot.js"></script>
+    <script src="~/pages/chart/float/jquery.flot.categories.js"></script>
+    <script src="~/pages/chart/float/curvedLines.js"></script>
+    <script src="~/pages/chart/float/jquery.flot.tooltip.min.js"></script>
+    <!-- jquery sortable js -->
+    <script type="text/javascript" src="~/lib/Sortable/js/Sortable.js"></script>
+    <script type="text/javascript" src="~/pages/sortable-custom.js"></script>
+    <!-- amchart js -->
+    <script src="~/pages/widget/amchart/amcharts.js"></script>
+    <script src="~/pages/widget/amchart/serial.js"></script>
+    <script src="~/pages/widget/amchart/light.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="~/lib/modernizr/js/modernizr.js"></script>
+    <script type="text/javascript" src="~/lib/modernizr/js/css-scrollbars.js"></script>
+    <!-- nestable js -->
+    <script type="text/javascript" src="~/pages/nestable/jquery.nestable.js"></script>
+    <script type="text/javascript" src="~/pages/nestable/custom-nestable.js"></script>
+    <!-- custom js -->
+    <script src="~/js/pcoded.min.js"></script>
+    <script src="~/js/vertical/vertical-layout.min.js"></script>
+    <script type="text/javascript" src="~/pages/dashboard/custom-dashboard.min.js"></script>
+    <script type="text/javascript" src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="~/js/script.js"></script>
+    <!--Script for Validation start-->
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js" type="text/javascript"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" type="text/javascript"></script>
+    <!--Script for notification start-->
+    <script type="text/javascript" src="~/js/plugin/humane.js"></script>
+    <script type="text/javascript" src="~/js/plugin/humane.min.js"></script>
+    <script type="text/javascript" src="~/js/custom/Loading.js"></script>
+    <script type="text/javascript" src="~/js/custom/Form.js"></script>
+    
+    <environment names="Development">
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        <script src="~/js/u2f/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/js/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/u2f/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

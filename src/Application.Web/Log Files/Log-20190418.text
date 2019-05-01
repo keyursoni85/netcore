@@ -1,0 +1,340 @@
+2019-04-18 13:48:52.036 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/  
+2019-04-18 13:48:52.104 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 13:48:52.193 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 13:48:54.670 +05:30 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2019-04-18 13:48:55.296 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 3108.5442ms
+2019-04-18 13:48:55.300 +05:30 [Information] Request finished in 3278.4285ms 200 text/html; charset=utf-8
+2019-04-18 13:51:45.450 +05:30 [Information] Request starting HTTP/1.1 POST http://127.0.0.1:24169/iisintegration  0
+2019-04-18 13:51:45.451 +05:30 [Information] Request finished in 1.324ms 202 
+2019-04-18 13:53:50.937 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:63423/  0
+2019-04-18 13:53:50.937 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/  
+2019-04-18 13:53:51.043 +05:30 [Information] Request finished in 188.8203ms 200 
+2019-04-18 13:53:51.152 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 13:53:51.457 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 13:53:55.011 +05:30 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2019-04-18 13:53:56.269 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 4811.7923ms
+2019-04-18 13:53:56.287 +05:30 [Information] Request finished in 5463.1938ms 200 text/html; charset=utf-8
+2019-04-18 13:53:56.341 +05:30 [Information] Request starting HTTP/1.1 POST http://127.0.0.1:33771/iisintegration  0
+2019-04-18 13:53:56.370 +05:30 [Information] Request finished in 54.5982ms 202 
+2019-04-18 13:55:07.688 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/ application/x-www-form-urlencoded 267
+2019-04-18 13:55:07.748 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 13:55:07.908 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (["Application.Entities.User"]) - ModelState is Valid
+2019-04-18 13:55:09.524 +05:30 [Information] AuthenticationScheme: "Cookies" signed in.
+2019-04-18 13:55:09.525 +05:30 [Information] Accessing expired session, Key:"086e5c56-dc97-6df7-2f03-f0ee074cbe95"
+2019-04-18 13:55:09.530 +05:30 [Information] Executing RedirectResult, redirecting to "/Home/Index".
+2019-04-18 13:55:09.534 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 1671.5688ms
+2019-04-18 13:55:09.537 +05:30 [Information] Session started; Key:"086e5c56-dc97-6df7-2f03-f0ee074cbe95", Id:"d04bd3db-2f7c-0d2d-c86c-2e80495934bd"
+2019-04-18 13:55:09.542 +05:30 [Information] Request finished in 1867.2869ms 302 
+2019-04-18 13:55:09.547 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Home/Index  
+2019-04-18 13:55:09.548 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 13:55:09.555 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 13:55:09.586 +05:30 [Information] Executing action method "Application.Web.Controllers.HomeController.Index (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 13:55:11.578 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2019-04-18 13:55:12.254 +05:30 [Information] Executed action "Application.Web.Controllers.HomeController.Index (Application.Web)" in 2703.1681ms
+2019-04-18 13:55:12.258 +05:30 [Information] Request finished in 2709.5804ms 200 text/html; charset=utf-8
+2019-04-18 13:55:26.419 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Account/Logout  
+2019-04-18 13:55:26.419 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 13:55:26.422 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Logout (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 13:55:26.424 +05:30 [Information] AuthenticationScheme: "Cookies" signed out.
+2019-04-18 13:55:26.424 +05:30 [Information] AuthenticationScheme: "Temp" signed out.
+2019-04-18 13:55:26.435 +05:30 [Information] Executing RedirectResult, redirecting to "/".
+2019-04-18 13:55:26.435 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Logout (Application.Web)" in 13.6837ms
+2019-04-18 13:55:26.435 +05:30 [Information] Request finished in 16.6939ms 302 
+2019-04-18 13:55:26.439 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/  
+2019-04-18 13:55:26.440 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 13:55:26.794 +05:30 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2019-04-18 13:55:27.154 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 713.6204ms
+2019-04-18 13:55:27.155 +05:30 [Information] Request finished in 716.1459ms 200 text/html; charset=utf-8
+2019-04-18 13:55:47.545 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/ application/x-www-form-urlencoded 224
+2019-04-18 13:55:47.548 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (["Application.Entities.User"]) - ModelState is Valid
+2019-04-18 13:55:47.630 +05:30 [Information] AuthenticationScheme: "Cookies" signed in.
+2019-04-18 13:55:47.630 +05:30 [Information] Executing RedirectResult, redirecting to "/Home/Index".
+2019-04-18 13:55:47.631 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 84.5403ms
+2019-04-18 13:55:47.631 +05:30 [Information] Request finished in 85.9053ms 302 
+2019-04-18 13:55:47.635 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Home/Index  
+2019-04-18 13:55:47.635 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 13:55:47.636 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 13:55:47.636 +05:30 [Information] Executing action method "Application.Web.Controllers.HomeController.Index (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 13:55:47.636 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2019-04-18 13:55:47.638 +05:30 [Information] Executed action "Application.Web.Controllers.HomeController.Index (Application.Web)" in 2.5248ms
+2019-04-18 13:55:47.638 +05:30 [Information] Request finished in 3.4164ms 200 text/html; charset=utf-8
+2019-04-18 13:59:44.153 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/ListUser  
+2019-04-18 13:59:44.154 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 13:59:44.156 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 13:59:44.157 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.ListUser (Application.Web)" with arguments (["", "", "1"]) - ModelState is Valid
+2019-04-18 13:59:44.563 +05:30 [Information] Executing ViewResult, running view at path "/Views/Manage/ListUser.cshtml".
+2019-04-18 13:59:44.840 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.ListUser (Application.Web)" in 683.6869ms
+2019-04-18 13:59:44.840 +05:30 [Information] Request finished in 687.6641ms 200 text/html; charset=utf-8
+2019-04-18 14:00:06.865 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/AddEditUser  
+2019-04-18 14:00:06.866 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:00:06.868 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:00:06.868 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" with arguments ([""]) - ModelState is Valid
+2019-04-18 14:00:07.319 +05:30 [Information] Executing PartialViewResult, running view at path "/Views/Manage/_AddEditUser.cshtml".
+2019-04-18 14:00:07.491 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" in 623.0668ms
+2019-04-18 14:00:07.492 +05:30 [Information] Request finished in 626.2398ms 200 text/html; charset=utf-8
+2019-04-18 14:00:07.814 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckPassoword?password=Admin%40123  
+2019-04-18 14:00:07.815 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:00:07.817 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" with arguments (["Admin@123"]) - ModelState is Valid
+2019-04-18 14:00:07.828 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:00:07.842 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" in 25.9662ms
+2019-04-18 14:00:07.843 +05:30 [Information] Request finished in 28.7614ms 200 application/json; charset=utf-8
+2019-04-18 14:00:08.458 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserName?userName=serveradmin  
+2019-04-18 14:00:08.459 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:00:08.461 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" with arguments (["serveradmin"]) - ModelState is Valid
+2019-04-18 14:00:08.477 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:00:08.477 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" in 15.8129ms
+2019-04-18 14:00:08.477 +05:30 [Information] Request finished in 18.8938ms 200 text/plain; charset=utf-8
+2019-04-18 14:00:09.680 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserName?userName=serveradmin  
+2019-04-18 14:00:09.681 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:00:09.681 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" with arguments (["serveradmin"]) - ModelState is Valid
+2019-04-18 14:00:09.701 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:00:09.701 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" in 20.2745ms
+2019-04-18 14:00:09.701 +05:30 [Information] Request finished in 21.0401ms 200 text/plain; charset=utf-8
+2019-04-18 14:00:14.253 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserName?userName=serveradmin  
+2019-04-18 14:00:14.254 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:00:14.255 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" with arguments (["serveradmin"]) - ModelState is Valid
+2019-04-18 14:00:14.272 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:00:14.272 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" in 17.4851ms
+2019-04-18 14:00:14.272 +05:30 [Information] Request finished in 19.9318ms 200 text/plain; charset=utf-8
+2019-04-18 14:00:20.305 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserName?userName=serveradmin  
+2019-04-18 14:00:20.306 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:00:20.306 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" with arguments (["serveradmin"]) - ModelState is Valid
+2019-04-18 14:00:20.322 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:00:20.322 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" in 16.3645ms
+2019-04-18 14:00:20.323 +05:30 [Information] Request finished in 18.2343ms 200 text/plain; charset=utf-8
+2019-04-18 14:00:21.549 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/AddEditUser/14162  
+2019-04-18 14:00:21.549 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:00:21.550 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:00:21.550 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" with arguments (["14162"]) - ModelState is Valid
+2019-04-18 14:00:21.607 +05:30 [Information] Executing PartialViewResult, running view at path "/Views/Manage/_AddEditUser.cshtml".
+2019-04-18 14:00:21.610 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" in 60.6791ms
+2019-04-18 14:00:21.611 +05:30 [Information] Request finished in 61.8891ms 200 text/html; charset=utf-8
+2019-04-18 14:49:05.436 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/DeleteUser/14162  
+2019-04-18 14:49:05.437 +05:30 [Information] "Cookies" was not authenticated. Failure message: "Ticket expired"
+2019-04-18 14:49:05.439 +05:30 [Information] Authorization failed for user: null.
+2019-04-18 14:49:05.441 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-04-18 14:49:05.443 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2019-04-18 14:49:05.446 +05:30 [Information] AuthenticationScheme: "Cookies" was challenged.
+2019-04-18 14:49:05.446 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" in 7.7325ms
+2019-04-18 14:49:05.447 +05:30 [Information] Request finished in 10.9468ms 401 
+2019-04-18 14:49:07.960 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/Manage/DeleteUser application/x-www-form-urlencoded 225
+2019-04-18 14:49:07.960 +05:30 [Information] "Cookies" was not authenticated. Failure message: "Ticket expired"
+2019-04-18 14:49:07.962 +05:30 [Information] Authorization failed for user: null.
+2019-04-18 14:49:07.962 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-04-18 14:49:07.963 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2019-04-18 14:49:07.963 +05:30 [Information] AuthenticationScheme: "Cookies" was challenged.
+2019-04-18 14:49:07.963 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" in 0.6222ms
+2019-04-18 14:49:07.963 +05:30 [Information] Request finished in 3.4901ms 302 
+2019-04-18 14:49:07.968 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Account/Login?ReturnUrl=%2FManage%2FDeleteUser  
+2019-04-18 14:49:07.968 +05:30 [Information] "Cookies" was not authenticated. Failure message: "Ticket expired"
+2019-04-18 14:49:07.969 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 14:49:07.988 +05:30 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2019-04-18 14:49:07.990 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 21.4787ms
+2019-04-18 14:49:07.990 +05:30 [Information] Request finished in 22.4836ms 200 text/html; charset=utf-8
+2019-04-18 14:49:10.882 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/ application/x-www-form-urlencoded 224
+2019-04-18 14:49:10.882 +05:30 [Information] "Cookies" was not authenticated. Failure message: "Ticket expired"
+2019-04-18 14:49:10.893 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (["Application.Entities.User"]) - ModelState is Valid
+2019-04-18 14:49:10.985 +05:30 [Information] AuthenticationScheme: "Cookies" signed in.
+2019-04-18 14:49:10.985 +05:30 [Information] Accessing expired session, Key:"086e5c56-dc97-6df7-2f03-f0ee074cbe95"
+2019-04-18 14:49:10.985 +05:30 [Information] Executing RedirectResult, redirecting to "/Home/Index".
+2019-04-18 14:49:10.985 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 102.9727ms
+2019-04-18 14:49:10.985 +05:30 [Information] Session started; Key:"086e5c56-dc97-6df7-2f03-f0ee074cbe95", Id:"7cb01034-5523-85cb-45af-bbd3a7300af3"
+2019-04-18 14:49:10.986 +05:30 [Information] Request finished in 104.011ms 302 
+2019-04-18 14:49:10.989 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Home/Index  
+2019-04-18 14:49:10.989 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:10.989 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:10.990 +05:30 [Information] Executing action method "Application.Web.Controllers.HomeController.Index (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 14:49:10.991 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2019-04-18 14:49:10.993 +05:30 [Information] Executed action "Application.Web.Controllers.HomeController.Index (Application.Web)" in 3.9174ms
+2019-04-18 14:49:10.994 +05:30 [Information] Request finished in 4.8046ms 200 text/html; charset=utf-8
+2019-04-18 14:49:13.120 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/ListUser  
+2019-04-18 14:49:13.120 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:13.120 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:13.121 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.ListUser (Application.Web)" with arguments (["", "", "1"]) - ModelState is Valid
+2019-04-18 14:49:13.154 +05:30 [Information] Executing ViewResult, running view at path "/Views/Manage/ListUser.cshtml".
+2019-04-18 14:49:13.159 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.ListUser (Application.Web)" in 38.1054ms
+2019-04-18 14:49:13.159 +05:30 [Information] Request finished in 39.286ms 200 text/html; charset=utf-8
+2019-04-18 14:49:14.582 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/DeleteUser/14162  
+2019-04-18 14:49:14.582 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:14.583 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:14.583 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" with arguments (["14162"]) - ModelState is Valid
+2019-04-18 14:49:14.603 +05:30 [Information] Executing PartialViewResult, running view at path "/Views/Manage/_DeleteUser.cshtml".
+2019-04-18 14:49:14.604 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" in 20.9718ms
+2019-04-18 14:49:14.604 +05:30 [Information] Request finished in 21.96ms 200 text/html; charset=utf-8
+2019-04-18 14:49:15.853 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/Manage/DeleteUser/14162 application/x-www-form-urlencoded 225
+2019-04-18 14:49:15.854 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:15.854 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:15.877 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" with arguments (["14162", "Microsoft.AspNetCore.Http.FormCollection"]) - ModelState is Valid
+2019-04-18 14:49:15.953 +05:30 [Information] Executing RedirectResult, redirecting to "/Manage/ListUser".
+2019-04-18 14:49:15.969 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" in 115.1381ms
+2019-04-18 14:49:15.970 +05:30 [Information] Request finished in 116.8588ms 302 
+2019-04-18 14:49:15.986 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/ListUser  
+2019-04-18 14:49:15.987 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:15.987 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:15.987 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.ListUser (Application.Web)" with arguments (["", "", "1"]) - ModelState is Valid
+2019-04-18 14:49:16.022 +05:30 [Information] Executing ViewResult, running view at path "/Views/Manage/ListUser.cshtml".
+2019-04-18 14:49:16.025 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.ListUser (Application.Web)" in 37.8378ms
+2019-04-18 14:49:16.025 +05:30 [Information] Request finished in 38.7123ms 200 text/html; charset=utf-8
+2019-04-18 14:49:21.064 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Account/Logout  
+2019-04-18 14:49:21.064 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:21.065 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Logout (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 14:49:21.065 +05:30 [Information] AuthenticationScheme: "Cookies" signed out.
+2019-04-18 14:49:21.065 +05:30 [Information] AuthenticationScheme: "Temp" signed out.
+2019-04-18 14:49:21.078 +05:30 [Information] Executing RedirectResult, redirecting to "/".
+2019-04-18 14:49:21.078 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Logout (Application.Web)" in 13.4416ms
+2019-04-18 14:49:21.078 +05:30 [Information] Request finished in 14.351ms 302 
+2019-04-18 14:49:21.083 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/  
+2019-04-18 14:49:21.083 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 14:49:21.093 +05:30 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2019-04-18 14:49:21.095 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 11.5595ms
+2019-04-18 14:49:21.095 +05:30 [Information] Request finished in 12.446ms 200 text/html; charset=utf-8
+2019-04-18 14:49:50.734 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/ application/x-www-form-urlencoded 224
+2019-04-18 14:49:50.736 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (["Application.Entities.User"]) - ModelState is Valid
+2019-04-18 14:49:50.832 +05:30 [Information] AuthenticationScheme: "Cookies" signed in.
+2019-04-18 14:49:50.833 +05:30 [Information] Executing RedirectResult, redirecting to "/Home/Index".
+2019-04-18 14:49:50.833 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 97.4581ms
+2019-04-18 14:49:50.833 +05:30 [Information] Request finished in 98.5343ms 302 
+2019-04-18 14:49:50.837 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Home/Index  
+2019-04-18 14:49:50.837 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:50.838 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:50.838 +05:30 [Information] Executing action method "Application.Web.Controllers.HomeController.Index (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 14:49:50.838 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2019-04-18 14:49:50.839 +05:30 [Information] Executed action "Application.Web.Controllers.HomeController.Index (Application.Web)" in 1.4919ms
+2019-04-18 14:49:50.839 +05:30 [Information] Request finished in 2.3729ms 200 text/html; charset=utf-8
+2019-04-18 14:49:52.848 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/ListUser  
+2019-04-18 14:49:52.849 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:52.849 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:52.850 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.ListUser (Application.Web)" with arguments (["", "", "1"]) - ModelState is Valid
+2019-04-18 14:49:52.879 +05:30 [Information] Executing ViewResult, running view at path "/Views/Manage/ListUser.cshtml".
+2019-04-18 14:49:52.881 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.ListUser (Application.Web)" in 31.8016ms
+2019-04-18 14:49:52.881 +05:30 [Information] Request finished in 33.1489ms 200 text/html; charset=utf-8
+2019-04-18 14:49:54.495 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/AddEditUser  
+2019-04-18 14:49:54.495 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:54.496 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:49:54.496 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" with arguments ([""]) - ModelState is Valid
+2019-04-18 14:49:54.525 +05:30 [Information] Executing PartialViewResult, running view at path "/Views/Manage/_AddEditUser.cshtml".
+2019-04-18 14:49:54.527 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" in 31.5606ms
+2019-04-18 14:49:54.527 +05:30 [Information] Request finished in 32.4276ms 200 text/html; charset=utf-8
+2019-04-18 14:49:54.855 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserName?userName=serveradmin  
+2019-04-18 14:49:54.855 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:54.856 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" with arguments (["serveradmin"]) - ModelState is Valid
+2019-04-18 14:49:54.869 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckPassoword?password=Admin%40123  
+2019-04-18 14:49:54.870 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:54.871 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" with arguments (["Admin@123"]) - ModelState is Valid
+2019-04-18 14:49:54.885 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:49:54.885 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" in 29.1969ms
+2019-04-18 14:49:54.885 +05:30 [Information] Request finished in 30.2066ms 200 text/plain; charset=utf-8
+2019-04-18 14:49:54.893 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:49:54.894 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" in 23.0188ms
+2019-04-18 14:49:54.894 +05:30 [Information] Request finished in 24.8804ms 200 application/json; charset=utf-8
+2019-04-18 14:49:54.962 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserName?userName=serveradmin  
+2019-04-18 14:49:54.963 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:54.963 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" with arguments (["serveradmin"]) - ModelState is Valid
+2019-04-18 14:49:54.978 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:49:54.978 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" in 15.1067ms
+2019-04-18 14:49:54.978 +05:30 [Information] Request finished in 15.9829ms 200 text/plain; charset=utf-8
+2019-04-18 14:49:57.660 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserName?userName=miral  
+2019-04-18 14:49:57.661 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:57.662 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" with arguments (["miral"]) - ModelState is Valid
+2019-04-18 14:49:57.687 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:49:57.688 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserName (Application.Web)" in 25.7713ms
+2019-04-18 14:49:57.688 +05:30 [Information] Request finished in 27.9869ms 200 text/plain; charset=utf-8
+2019-04-18 14:49:59.720 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckPassoword?password=miral  
+2019-04-18 14:49:59.721 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:49:59.722 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" with arguments (["miral"]) - ModelState is Valid
+2019-04-18 14:49:59.749 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:49:59.750 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" in 27.9725ms
+2019-04-18 14:49:59.750 +05:30 [Information] Request finished in 30.2189ms 200 application/json; charset=utf-8
+2019-04-18 14:50:07.902 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckUserEmail?userEmail=miral%40gmail.com&uId=0  
+2019-04-18 14:50:07.903 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:07.907 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckUserEmail (Application.Web)" with arguments (["miral@gmail.com", "0"]) - ModelState is Valid
+2019-04-18 14:50:07.942 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:50:07.942 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckUserEmail (Application.Web)" in 35.9956ms
+2019-04-18 14:50:07.942 +05:30 [Information] Request finished in 40.2599ms 200 text/plain; charset=utf-8
+2019-04-18 14:50:12.743 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckPassoword?password=miral  
+2019-04-18 14:50:12.744 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:12.744 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" with arguments (["miral"]) - ModelState is Valid
+2019-04-18 14:50:12.756 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:50:12.757 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" in 12.7033ms
+2019-04-18 14:50:12.757 +05:30 [Information] Request finished in 13.67ms 200 application/json; charset=utf-8
+2019-04-18 14:50:15.148 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckPassoword?password=miral  
+2019-04-18 14:50:15.149 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:15.149 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" with arguments (["miral"]) - ModelState is Valid
+2019-04-18 14:50:15.157 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/Manage/CreateUser application/x-www-form-urlencoded 524
+2019-04-18 14:50:15.159 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:15.162 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:15.167 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CreateUser (Application.Web)" with arguments (["Application.Entities.User", "False"]) - ModelState is Invalid
+2019-04-18 14:50:15.170 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:50:15.170 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" in 20.8769ms
+2019-04-18 14:50:15.170 +05:30 [Information] Request finished in 21.7388ms 200 application/json; charset=utf-8
+2019-04-18 14:50:15.266 +05:30 [Information] Executing RedirectResult, redirecting to "/Manage/ListUser".
+2019-04-18 14:50:15.266 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CreateUser (Application.Web)" in 104.4349ms
+2019-04-18 14:50:15.266 +05:30 [Information] Request finished in 110.6752ms 302 
+2019-04-18 14:50:15.272 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/ListUser  
+2019-04-18 14:50:15.273 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:15.273 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:15.273 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.ListUser (Application.Web)" with arguments (["", "", "1"]) - ModelState is Valid
+2019-04-18 14:50:15.299 +05:30 [Information] Executing ViewResult, running view at path "/Views/Manage/ListUser.cshtml".
+2019-04-18 14:50:15.303 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.ListUser (Application.Web)" in 30.496ms
+2019-04-18 14:50:15.304 +05:30 [Information] Request finished in 31.5012ms 200 text/html; charset=utf-8
+2019-04-18 14:50:17.014 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/AddEditUser/14163  
+2019-04-18 14:50:17.014 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:17.015 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:17.015 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" with arguments (["14163"]) - ModelState is Valid
+2019-04-18 14:50:17.053 +05:30 [Information] Executing PartialViewResult, running view at path "/Views/Manage/_AddEditUser.cshtml".
+2019-04-18 14:50:17.055 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.AddEditUser (Application.Web)" in 40.5595ms
+2019-04-18 14:50:17.055 +05:30 [Information] Request finished in 41.4337ms 200 text/html; charset=utf-8
+2019-04-18 14:50:20.706 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/CheckPassoword  
+2019-04-18 14:50:20.706 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:20.707 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" with arguments ([""]) - ModelState is Valid
+2019-04-18 14:50:20.717 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/Manage/CreateUser application/x-www-form-urlencoded 494
+2019-04-18 14:50:20.718 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:20.718 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:20.720 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.CreateUser (Application.Web)" with arguments (["Application.Entities.User", "False"]) - ModelState is Invalid
+2019-04-18 14:50:20.725 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-04-18 14:50:20.725 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CheckPassoword (Application.Web)" in 18.2251ms
+2019-04-18 14:50:20.725 +05:30 [Information] Request finished in 19.1136ms 200 application/json; charset=utf-8
+2019-04-18 14:50:20.760 +05:30 [Information] Executing RedirectResult, redirecting to "/Manage/ListUser".
+2019-04-18 14:50:20.761 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.CreateUser (Application.Web)" in 42.3495ms
+2019-04-18 14:50:20.761 +05:30 [Information] Request finished in 44.6552ms 302 
+2019-04-18 14:50:20.769 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/ListUser  
+2019-04-18 14:50:20.769 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:20.769 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:20.769 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.ListUser (Application.Web)" with arguments (["", "", "1"]) - ModelState is Valid
+2019-04-18 14:50:20.797 +05:30 [Information] Executing ViewResult, running view at path "/Views/Manage/ListUser.cshtml".
+2019-04-18 14:50:20.802 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.ListUser (Application.Web)" in 32.7533ms
+2019-04-18 14:50:20.802 +05:30 [Information] Request finished in 33.7076ms 200 text/html; charset=utf-8
+2019-04-18 14:50:22.286 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/DeleteUser/14163  
+2019-04-18 14:50:22.286 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:22.286 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:22.287 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" with arguments (["14163"]) - ModelState is Valid
+2019-04-18 14:50:22.304 +05:30 [Information] Executing PartialViewResult, running view at path "/Views/Manage/_DeleteUser.cshtml".
+2019-04-18 14:50:22.305 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" in 18.3459ms
+2019-04-18 14:50:22.305 +05:30 [Information] Request finished in 19.4273ms 200 text/html; charset=utf-8
+2019-04-18 14:50:23.163 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44319/Manage/DeleteUser/14163 application/x-www-form-urlencoded 225
+2019-04-18 14:50:23.164 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:23.165 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:23.165 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" with arguments (["14163", "Microsoft.AspNetCore.Http.FormCollection"]) - ModelState is Valid
+2019-04-18 14:50:23.186 +05:30 [Information] Executing RedirectResult, redirecting to "/Manage/ListUser".
+2019-04-18 14:50:23.187 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.DeleteUser (Application.Web)" in 22.205ms
+2019-04-18 14:50:23.187 +05:30 [Information] Request finished in 23.5738ms 302 
+2019-04-18 14:50:23.201 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Manage/ListUser  
+2019-04-18 14:50:23.202 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:23.202 +05:30 [Information] Authorization was successful for user: "serveradmin".
+2019-04-18 14:50:23.202 +05:30 [Information] Executing action method "Application.Web.Controllers.ManageController.ListUser (Application.Web)" with arguments (["", "", "1"]) - ModelState is Valid
+2019-04-18 14:50:23.232 +05:30 [Information] Executing ViewResult, running view at path "/Views/Manage/ListUser.cshtml".
+2019-04-18 14:50:23.234 +05:30 [Information] Executed action "Application.Web.Controllers.ManageController.ListUser (Application.Web)" in 32.2901ms
+2019-04-18 14:50:23.234 +05:30 [Information] Request finished in 33.95ms 200 text/html; charset=utf-8
+2019-04-18 14:50:26.216 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/Account/Logout  
+2019-04-18 14:50:26.217 +05:30 [Information] AuthenticationScheme: "Cookies" was successfully authenticated.
+2019-04-18 14:50:26.218 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Logout (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 14:50:26.218 +05:30 [Information] AuthenticationScheme: "Cookies" signed out.
+2019-04-18 14:50:26.218 +05:30 [Information] AuthenticationScheme: "Temp" signed out.
+2019-04-18 14:50:26.228 +05:30 [Information] Executing RedirectResult, redirecting to "/".
+2019-04-18 14:50:26.229 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Logout (Application.Web)" in 11.0445ms
+2019-04-18 14:50:26.229 +05:30 [Information] Request finished in 12.4559ms 302 
+2019-04-18 14:50:26.232 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44319/  
+2019-04-18 14:50:26.233 +05:30 [Information] Executing action method "Application.Web.Controllers.AccountController.Login (Application.Web)" with arguments (null) - ModelState is Valid
+2019-04-18 14:50:26.241 +05:30 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2019-04-18 14:50:26.244 +05:30 [Information] Executed action "Application.Web.Controllers.AccountController.Login (Application.Web)" in 10.7362ms
+2019-04-18 14:50:26.244 +05:30 [Information] Request finished in 11.6626ms 200 text/html; charset=utf-8

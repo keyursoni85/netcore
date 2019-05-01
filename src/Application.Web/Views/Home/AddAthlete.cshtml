@@ -1,0 +1,84 @@
+﻿@model Application.Web.Models.AthleteModel
+@{
+    ViewBag.PageTitle = "Application - Add Athlete";
+}
+
+@using (Html.BeginForm("CreateNewAthlete", "Home", FormMethod.Post, new { @class = "form_submit", id = "SaveAthlete" }))
+{
+    <div class="modal-header">
+        <h4 class="modal-title">Add New Athlete to @Model.TestName</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Athlete</label>
+            <input asp-for="TestId" value="@Model.TestId" type="hidden" class="form-control" />
+            <input asp-for="IsEditMode" value="@Model.IsEditMode" type="hidden" class="form-control" />
+            <input asp-for="MapId" value="@Model.MapId" type="hidden" class="form-control" />
+            <div class="col-sm-9">
+                @Html.DropDownListFor(m => m.AthleteId, new SelectList(Model.userList, "UserId", "UserName"), "Choose", new
+                {
+                    @class = "form-control",
+                    @data_val = "true"
+                })
+                <span asp-validation-for="AthleteId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Distance(meter)</label>
+            <div class="col-sm-9">
+                <input asp-for="Distance" class="form-control" type="number" maxlength="8" placeholder="Date" />
+                <span asp-validation-for="Distance" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary btn_f_submit" id="Add" type="submit">Create New Athlete</button>
+
+        @{
+            if (Model.IsEditMode)
+            {
+                <button class="btn btn-danger btn_f_submit" id="Delete" type="button">Delete Athlete From @Model.TestName</button>
+            }
+        }
+
+    </div>
+}
+<script src="~/lib/jquery-validation/dist/jquery.validate.js" type="text/javascript"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" type="text/javascript"></script>
+<div id="modal-action-Delete-Athele" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" id="getdeletecode">
+        </div>
+    </div>
+</div>
+<style>
+    .form-control {
+        border: 1px solid #ced4da !important;
+    }
+</style>
+<script>
+
+    $("#Delete").unbind().click(function () {
+
+        $.ajax({
+            url: '@Url.Action("DeleteAthlete", "Home")',
+            type: 'GET',
+            data: { mapId: $("#MapId").val(), testId: $("#TestId").val()},
+            dataType: '',
+            success: function (d) {
+
+                if (d.length > 0) {
+                    $("#getdeletecode").html(d);
+                    $("#modal-action-Delete-Athele").modal("show");
+                }
+            },
+            error: function () {
+                alert('Error! Please try again.');
+            }
+        });
+    });
+
+
+</script>
